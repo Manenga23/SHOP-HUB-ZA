@@ -137,8 +137,12 @@ export default function SearchPage() {
           </p>
         )}
 
-        <footer className="footer">© {new Date().getFullYear()} {site}. Affiliate disclosure applies.</footer>
-      </div>
-    </>
-  );
-}
+        <footer className="footer"><footer className="footer">
+  <div className="disclosure">
+    Affiliate Disclosure: Shop Hub ZA participates in affiliate programs, including Amazon Associates,
+    and may earn a commission from qualifying purchases at no extra cost to you.
+  </div>
+  <div>
+    © {new Date().getFullYear()} Shop Hub ZA. All rights reserved.
+  </div>
+</footer>
