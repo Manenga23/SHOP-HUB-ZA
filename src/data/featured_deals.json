@@ -14,6 +14,22 @@
   "reviewCount": null,
   "updatedAt": "2026-01-01T00:00:00Z"
 }
+[
+  {
+    "provider": "amazon",
+    "providerProductId": "shophub20-21",
+    "title": "Amazon Basics Upright Bagless Vacuum Cleaner – Lightweight, Carpet & Hard Floors",
+    "price": 893.87,
+    "currency": "ZAR",
+    "imageUrl":https://www.amazon.com/Amazon-Basics-Upright-Bagless-Lightweight/dp/B0BN5F6MJY/ref=sr_1_1_ffob_sspa?_encoding=UTF8&content-id=amzn1.sym.490b3950-4b3d-4c3e-a485-a282eecc425e&dib=eyJ2IjoiMSJ9.l5ZpKJVswdqdcoaVWn_3jVRhxha-EpzC84lr-IPvDvtGz0c0FMae_051rQtpeawQNQ9g0SirvE7ri94fevKYRjVew8fuKF75NZyzUhvi8FofD3RQ2QNi5tzCizh922lodcNTG_L7Ln2pWT9jM4NogQXaeva7CLIcZavsxNFa7b3Sy52cgAva_0sx1Bc-C1CtQRBInHHrcoeh6VNB8G9S5buKy0P4W8cKp7SO16RbG74.dqD0Ow1KIrOmoZsKycHxT7o6bn6bFgarESW5uR_Io8E&dib_tag=se&keywords=Vacuum+Cleaner&pd_rd_r=490bf1ad-47b4-4ae3-91ad-c897927666fb&pd_rd_w=i1Oxa&pd_rd_wg=wTd6V&qid=1767292624&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1,
+    "productUrl": "https://www.amazon.co.uk/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM&linkCode=ll2&tag=shophub20-21&linkId=e93dd488a5e5f9d62781d5baba28afeb&language=en_GB&ref_=as_li_ss_tlE",
+    "category": "Home",
+    "brand": "Amazon Basics",
+    "rating": 4.3,
+    "reviewCount": 2900,
+    "updatedAt": "2026-01-01T00:00:00Z"
+  }
+]
 
   {
     "provider": "temu",
