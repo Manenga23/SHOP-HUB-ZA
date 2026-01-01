@@ -19,13 +19,17 @@ export default function SearchPage() {
   });
 
   const providersParam = useMemo(() => {
-    return providerList.filter(p => activeProviders[p]).join(",");
+    return providerList.filter((p) => activeProviders[p]).join(",");
   }, [activeProviders]);
 
   useEffect(() => {
-    if (!q) return;
+    if (!q) {
+      setResults([]);
+      return;
+    }
 
     let cancelled = false;
+
     async function run() {
       setLoading(true);
       try {
@@ -40,8 +44,11 @@ export default function SearchPage() {
         if (!cancelled) setLoading(false);
       }
     }
+
     run();
-    return () => { cancelled = true; };
+    return () => {
+      cancelled = true;
+    };
   }, [q, providersParam]);
 
   return (
@@ -53,28 +60,26 @@ export default function SearchPage() {
       <div className="container">
         {/* Header */}
         <div className="nav">
-          <a className="brand" href="/">{site}</a>
+          <a className="brand" href="/">
+            {site}
+          </a>
+
           <form action="/search" className="searchRow" style={{ maxWidth: 520 }}>
-            <input
-              className="input"
-              name="q"
-              defaultValue={q}
-              placeholder="Search products..."
-            />
-            <button className="btn" type="submit">Search</button>
+            <input className="input" name="q" defaultValue={q} placeholder="Search products..." />
+            <button className="btn" type="submit">
+              Search
+            </button>
           </form>
         </div>
 
         {/* Provider filters */}
         <div className="filters">
-          {providerList.map(p => (
+          {providerList.map((p) => (
             <label key={p} className="chip">
               <input
                 type="checkbox"
-                checked={activeProviders[p]}
-                onChange={(e) =>
-                  setActiveProviders(prev => ({ ...prev, [p]: e.target.checked }))
-                }
+                checked={!!activeProviders[p]}
+                onChange={(e) => setActiveProviders((prev) => ({ ...prev, [p]: e.target.checked }))}
               />
               {providers[p].label}
             </label>
@@ -85,7 +90,7 @@ export default function SearchPage() {
         {!q && <p className="p">Type a search above.</p>}
         {q && loading && <p className="p">Searching…</p>}
 
-        {/* Results */}
+        {/* Results grid */}
         <div className="grid">
           {results.map((p) => {
             const zar = p.price != null ? toZar(p.price, String(p.currency)) : null;
@@ -95,10 +100,7 @@ export default function SearchPage() {
               `&url=${encodeURIComponent(p.productUrl)}`;
 
             return (
-              <div
-                key={`${p.provider}:${p.providerProductId}`}
-                className="card"
-              >
+              <div key={`${p.provider}:${p.providerProductId}`} className="card">
                 <div className="small">{providers[p.provider].label}</div>
 
                 <div className="imgBox">
@@ -117,16 +119,9 @@ export default function SearchPage() {
                 <div className="title">{p.title}</div>
 
                 <div className="row">
-                  <div style={{ fontWeight: 800 }}>
-                    {zar != null ? formatZar(zar) : "—"}
-                  </div>
+                  <div style={{ fontWeight: 800 }}>{zar != null ? formatZar(zar) : "—"}</div>
 
-                  <a
-                    href={outUrl}
-                    className="buy"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <a href={outUrl} className="buy" target="_blank" rel="noopener noreferrer">
                     Buy
                   </a>
                 </div>
@@ -142,22 +137,7 @@ export default function SearchPage() {
           </p>
         )}
 
-        <footer className="footer">
-          © {new Date().getFullYear()} {site}. Affiliate disclosure applies.
-        </footer>
-      </div>
-    </>
-  );
-}
-
-          </div>
-
-          {q && !loading && results.length === 0 && (
-            <p style={{ marginTop: 14 }}>
-              No results yet. Add deals in <code>src/data/featured_deals.json</code> or connect provider APIs.
-            </p>
-          )}
-        </section>
+        <footer className="footer">© {new Date().getFullYear()} {site}. Affiliate disclosure applies.</footer>
       </div>
     </>
   );
