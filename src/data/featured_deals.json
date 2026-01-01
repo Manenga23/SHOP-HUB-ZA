@@ -1,0 +1,44 @@
+[
+  {
+    "provider": "amazon",
+    "providerProductId": "demo-1",
+    "title": "Example: Bluetooth Earbuds (demo deal)",
+    "price": 299.0,
+    "currency": "ZAR",
+    "imageUrl": null,
+    "productUrl": "https://www.amazon.com/",
+    "category": "Electronics",
+    "brand": null,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-01-01T00:00:00Z"
+  },
+  {
+    "provider": "temu",
+    "providerProductId": "demo-2",
+    "title": "Example: LED Strip Lights (demo deal)",
+    "price": 89.0,
+    "currency": "ZAR",
+    "imageUrl": null,
+    "productUrl": "https://www.temu.com/",
+    "category": "Home",
+    "brand": null,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-01-01T00:00:00Z"
+  },
+  {
+    "provider": "shein",
+    "providerProductId": "demo-3",
+    "title": "Example: Sneakers (demo deal)",
+    "price": 399.0,
+    "currency": "ZAR",
+    "imageUrl": null,
+    "productUrl": "https://www.shein.com/",
+    "category": "Fashion",
+    "brand": null,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-01-01T00:00:00Z"
+  }
+]
