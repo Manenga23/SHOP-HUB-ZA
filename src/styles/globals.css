@@ -174,3 +174,8 @@ a{ color: inherit; }
   color: var(--muted);
   font-size: 14px;
 }
+.disclosure{
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 10px;
+}
