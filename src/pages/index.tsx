@@ -12,57 +12,44 @@ export default function Home() {
         <meta name="description" content="Shop Hub ZA — compare deals across stores in one search." />
       </Head>
 
-      <div style={{ maxWidth: 900, margin: "0 auto", padding: 20, fontFamily: "system-ui, Arial" }}>
-        <header style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: 12 }}>
-          <h1 style={{ margin: 0 }}>{site}</h1>
+      <div className="container">
+        <div className="nav">
+          <a className="brand" href="/">{site}</a>
           <a href="/search" style={{ textDecoration: "none" }}>Search</a>
-        </header>
+        </div>
 
-        <section style={{ marginTop: 28, padding: 18, border: "1px solid #ddd", borderRadius: 14 }}>
-          <h2 style={{ marginTop: 0 }}>Search once. Shop anywhere.</h2>
-          <p style={{ marginTop: 6, opacity: 0.8 }}>
-            Compare products across Amazon, Temu and SHEIN — then buy directly from the store.
-          </p>
+        <section className="hero">
+          <h1 className="h1">Search once. Shop anywhere.</h1>
+          <p className="p">Compare products across Amazon, Temu and SHEIN — then buy directly from the store.</p>
 
-          <form action="/search" style={{ display: "flex", gap: 10, marginTop: 12 }}>
+          <form className="searchRow" action="/search">
             <input
+              className="input"
               name="q"
               value={q}
               onChange={(e) => setQ(e.target.value)}
               placeholder="Search e.g. air fryer, sneakers, phone case..."
-              style={{ flex: 1, padding: 12, borderRadius: 12, border: "1px solid #ccc" }}
             />
-            <button style={{ padding: "12px 16px", borderRadius: 12, border: "1px solid #ccc", cursor: "pointer" }}>
-              Search
-            </button>
+            <button className="btn" type="submit">Search</button>
           </form>
 
-          <div style={{ marginTop: 14, fontSize: 14, opacity: 0.8 }}>
-            Note: We may earn a commission when you buy via our links (where available).
+          <div className="p" style={{ fontSize: 14, marginTop: 12 }}>
+            Affiliate disclosure: Shop Hub ZA may earn a commission from qualifying purchases.
           </div>
         </section>
 
-        <section style={{ marginTop: 24 }}>
-          <h3>Popular categories</h3>
-          <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
+        <section style={{ marginTop: 18 }}>
+          <h3 style={{ margin: "0 0 10px" }}>Popular categories</h3>
+          <div className="pills">
             {["Fashion", "Electronics", "Home", "Beauty", "Baby", "Sports"].map((c) => (
-              <a key={c} href={`/search?q=${encodeURIComponent(c)}`} style={{
-                border: "1px solid #ddd", borderRadius: 999, padding: "8px 12px",
-                textDecoration: "none"
-              }}>
-                {c}
-              </a>
+              <a key={c} className="pill" href={`/search?q=${encodeURIComponent(c)}`}>{c}</a>
             ))}
           </div>
         </section>
 
-        <section style={{ marginTop: 24, padding: 16, border: "1px solid #eee", borderRadius: 14 }}>
-          <h3 style={{ marginTop: 0 }}>MVP tip</h3>
-          <p style={{ margin: 0, opacity: 0.85 }}>
-            You can add/replace demo items in <code>src/data/featured_deals.json</code> to show real deals immediately,
-            while you wait for Amazon/SHEIN/Temu API approvals.
-          </p>
-        </section>
+        <footer className="footer">
+          © {new Date().getFullYear()} {site}. Affiliate disclosure applies.
+        </footer>
       </div>
     </>
   );
