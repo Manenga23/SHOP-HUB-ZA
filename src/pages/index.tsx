@@ -47,14 +47,15 @@ export default function Home() {
           </div>
         </section>
 
-        <footer className="footer">
-          <footer className="footer">
+       <footer className="footer">
   <div className="disclosure">
-    Affiliate Disclosure: Shop Hub ZA participates in affiliate programs, including Amazon Associates,
-    and may earn a commission from qualifying purchases at no extra cost to you.
+    Affiliate Disclosure: We may earn commissions from qualifying purchases.
+    <a href="/disclosure" style={{ marginLeft: 6, textDecoration: "underline" }}>
+      Learn more
+    </a>
   </div>
   <div>
-    © {new Date().getFullYear()} Shop Hub ZA. All rights reserved.
+    © {new Date().getFullYear()} Shop Hub ZA.
   </div>
 </footer>
 
