@@ -18,7 +18,7 @@
   [
   {
     "provider": "amazon",
-    "providerProductId": "B0C5N6H8QK""shophub20-21",
+    "providerProductId": "shophub20-21",
     "title": "Amazon Basics Upright Bagless Vacuum Cleaner – Lightweight, Carpet & Hard Floors",
     "price": 893.87,
     "currency": "ZAR",
@@ -30,9 +30,7 @@
     "reviewCount": 2900,
     "updatedAt": "2026-01-01T00:00:00Z"
   }
-]
 
-]
 
   {
     "provider": "temu",
