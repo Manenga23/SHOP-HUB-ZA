@@ -124,3 +124,71 @@
     "rating": 4.4,
     "reviewCount": 7200,
     "updatedAt": "2026-01-01T00:00:00Z"
+  },
+  {
+    "provider": "amazon",
+    "providerProductId": "shophub20-21",
+    "title": "Stainless Steel Cookware Set – 10 Piece",
+    "price": 1899.00,
+    "currency": "ZAR",
+    "imageUrl": null,
+    "productUrl": "https://www.amazon.co.uk/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM&linkCode=ll2&tag=shophub20-21&linkId=e93dd488a5e5f9d62781d5baba28afeb&language=en_GB&ref_=as_li_ss_tlE",
+    "category": "Kitchen",
+    "brand": "Generic",
+    "rating": 4.3,
+    "reviewCount": 5400,
+    "updatedAt": "2026-01-01T00:00:00Z"
+  }
+]
+
+[
+  {
+    "provider": "amazon",
+    "providerProductId": "shophub20-21",
+    "title": "Amazon Basics Upright Bagless Vacuum Cleaner – Lightweight, Carpet & Hard Floors",
+    "price": 893.87,
+    "currency": "ZAR",
+    "imageUrl": null,
+    "productUrl": "https://www.amazon.co.uk/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM&linkCode=ll2&tag=shophub20-21&linkId=e93dd488a5e5f9d62781d5baba28afeb&language=en_GB&ref_=as_li_ss_tlE",
+    "category": "Home",
+    "brand": "Amazon Basics",
+    "category": "Home",
+    "brand": "Amazon Basics",
+    "rating": 4.3,
+    "reviewCount": 2900,
+    "updatedAt": "2026-01-01T00:00:00Z"
+  },
+  {
+    "provider": "temu",
+    "providerProductId": "demo-2",
+    "title": "Example: LED Strip Lights (demo deal)",
+    "price": 89.0,
+    "currency": "ZAR",
+    "imageUrl": null,
+    "productUrl": "https://www.temu.com/",
+    "category": "Home",
+    "brand": null,
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-01-01T00:00:00Z"
+  },
+  {
+    "provider": "shein",
+    "providerProductId": "demo-3",
+    "title": "Example: Sneakers (demo deal)",
+    "price": 399.0,
+    "currency": "ZAR",
+    "imageUrl": null,
+    "productUrl": "https://www.shein.com/",
+    "category": "Fashion",
+    "brand": "SHEIN",
+    "rating": null,
+    "reviewCount": null,
+    "updatedAt": "2026-01-01T00:00:00Z"
+  }
+]
+
+
+ 
+
+    
